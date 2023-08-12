@@ -7,16 +7,461 @@
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    <header></header>
-    <form action="connection/index.php" method="post">
-        <label for="">Nome:</label><br>
-        <input type="text" max="100" name="nome" id="nome"><br>
-        <label for="">Email:</label><br>
-        <input type="text" name="email" id="email"><br>
-        <label for="">Senha:</label><br>
-        <input type="password" name="pass" id="pass"><br>
-        <input type="submit" name="sub" id="sub">
-    </form>
+    <header>
+        <section class="logo">
+            <div>
+                <img src="images/logo.png" alt="logo">
+                <h1>FenixEnglish</h1>  
+            </div>
+            <ul>
+                <li><a href="">Início</a></li>
+                <li><a href="">Cursos</a></li>
+                <li><a href="">Sobre</a></li>
+            </ul>
+        </section>
+
+        <section class="buttons">
+            <button>me cadastrar →</button>
+            <button>entrar</button>
+        </section>
+    </header>
+    
+    
+    
+    
+    <main class="apresentacao">
+
+        <div class="vantagens">
+            <div class="content">
+                <span>Vantagens de estudar conosco<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>main .vantagens .content svg{fill:#246dff}</style><path d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm177.6 62.1C192.8 334.5 218.8 352 256 352s63.2-17.5 78.4-33.9c9-9.7 24.2-10.4 33.9-1.4s10.4 24.2 1.4 33.9c-22 23.8-60 49.4-113.6 49.4s-91.7-25.5-113.6-49.4c-9-9.7-8.4-24.9 1.4-33.9s24.9-8.4 33.9 1.4zM144.4 208a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zm192-32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg></span>
+
+                <div id="vantagem">
+                    <div>
+                        <p>A melhor forma de aprender</p><svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>main .vantagens .content div svg{fill:#f96262}</style><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg>
+                    </div>
+                    <div>
+                        <p>Pague apenas uma vez</p><svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>main .vantagens .content div svg{fill:#f96262}</style><path d="M105.1 202.6c7.7-21.8 20.2-42.3 37.8-59.8c62.5-62.5 163.8-62.5 226.3 0L386.3 160H336c-17.7 0-32 14.3-32 32s14.3 32 32 32H463.5c0 0 0 0 0 0h.4c17.7 0 32-14.3 32-32V64c0-17.7-14.3-32-32-32s-32 14.3-32 32v51.2L414.4 97.6c-87.5-87.5-229.3-87.5-316.8 0C73.2 122 55.6 150.7 44.8 181.4c-5.9 16.7 2.9 34.9 19.5 40.8s34.9-2.9 40.8-19.5zM39 289.3c-5 1.5-9.8 4.2-13.7 8.2c-4 4-6.7 8.8-8.1 14c-.3 1.2-.6 2.5-.8 3.8c-.3 1.7-.4 3.4-.4 5.1V448c0 17.7 14.3 32 32 32s32-14.3 32-32V396.9l17.6 17.5 0 0c87.5 87.4 229.3 87.4 316.7 0c24.4-24.4 42.1-53.1 52.9-83.7c5.9-16.7-2.9-34.9-19.5-40.8s-34.9 2.9-40.8 19.5c-7.7 21.8-20.2 42.3-37.8 59.8c-62.5 62.5-163.8 62.5-226.3 0l-.1-.1L125.6 352H176c17.7 0 32-14.3 32-32s-14.3-32-32-32H48.4c-1.6 0-3.2 .1-4.8 .3s-3.1 .5-4.6 1z"/></svg>
+                    </div>
+                    <div>
+                        <p>Material 100% online</p><svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>main .vantagens .content div svg{fill:#f96262}</style><path d="M0 96C0 43 43 0 96 0h96V190.7c0 13.4 15.5 20.9 26 12.5L272 160l54 43.2c10.5 8.4 26 .9 26-12.5V0h32 32c17.7 0 32 14.3 32 32V352c0 17.7-14.3 32-32 32v64c17.7 0 32 14.3 32 32s-14.3 32-32 32H384 96c-53 0-96-43-96-96V96zM64 416c0 17.7 14.3 32 32 32H352V384H96c-17.7 0-32 14.3-32 32z"/></svg>
+                    </div>
+                    <div>
+                        <p>Metodologia centrada</p><svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>main .vantagens .content div svg{fill:#f96262}</style><path d="M0 64C0 46.3 14.3 32 32 32H88h48 56c17.7 0 32 14.3 32 32s-14.3 32-32 32V400c0 44.2-35.8 80-80 80s-80-35.8-80-80V96C14.3 96 0 81.7 0 64zM136 96H88V256h48V96zM288 64c0-17.7 14.3-32 32-32h56 48 56c17.7 0 32 14.3 32 32s-14.3 32-32 32V400c0 44.2-35.8 80-80 80s-80-35.8-80-80V96c-17.7 0-32-14.3-32-32zM424 96H376V256h48V96z"/></svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="curso">
+            <div>
+                <p class="title">O seu futuro nas suas mãos</p>
+                <h1>Cursos de inglês completos</h1>
+            </div>
+            
+            <p class="text">Descubra um curso de inglês excepcional, projetado para elevar sua fluência 
+                e diferenciá-lo da concorrência. Nossa equipe de instrutores nativos e experientes 
+                o guiará em uma jornada de aprendizado envolvente e prático. Com uma metodologia 
+                centrada na comunicação real, você irá dominar não apenas as palavras, mas também 
+                os nuances culturais da língua inglesa, preparando-se para qualquer contexto.
+
+                Nossa abordagem holística abrange desde conversas cotidianas até tópicos complexos, 
+                tudo isso respaldado por sessões interativas de grupo, tutoriais personalizados e 
+                recursos online avançados. Mergulhe na cultura anglofônica, gírias e etiqueta social, 
+                desenvolvendo não apenas habilidades linguísticas, mas também uma compreensão profunda 
+                das conexões humanas. Invista em sua evolução linguística e 
+                destaque-se em um mundo globalizado. Sua jornada para a excelência no inglês começa aqui.</p>
+        </div>
+
+
+
+
+    </main>
+
+    <main class="apresentacao-total">
+        <div class="apres">
+            <div>
+                <h2>Sobre o curso</h2>
+                <p>
+                    Nosso Curso de Inglês é projetado para atender a uma ampla gama de alunos, desde iniciantes até 
+                    aqueles que desejam aperfeiçoar suas habilidades existentes. O curso é estruturado em módulos 
+                    progressivos, cada um focado em aspectos específicos da língua inglesa, como vocabulário, gramática, 
+                    compreensão auditiva, expressão oral e escrita. As aulas são dinâmicas e interativas, combinando teoria 
+                    com atividades práticas para garantir um aprendizado completo e envolvente
+                </p>
+            </div>
+            <img src="images/img-grafic.png" alt="image-of-a-grafic-upping" width="250">
+        </div>
+        <div class="apres">
+            <div>
+               <h2>Sobre o professor</h2>
+                <p>
+                    Nossas aulas são ministradas por um renomado professor de inglês. Com mais de uma década 
+                    de experiência no ensino de inglês como língua estrangeira, nosso Professor traz paixão, conhecimento 
+                    e dedicação para cada aula. Ele possui formação acadêmica na área de linguística aplicada e um histórico 
+                    impressionante de ajudar alunos a atingir seus objetivos linguísticos. Além de sua expertise, ele
+                    é conhecido por sua abordagem calorosa e encorajadora, criando um ambiente confortável e receptivo para 
+                    todos os alunos.
+                </p> 
+            </div>
+            
+            <img src="images/img-prof.jpeg" alt="image-prof" width="270">
+        </div>
+        <div class="apres">
+            <div>
+                <h2>Metodologia de ensino</h2>
+                <p>
+                    Nossa metodologia é centrada no aluno e visa promover um aprendizado eficiente e duradouro. Acreditamos 
+                    que a prática ativa é a chave para a fluência. Portanto, nossas aulas envolvem uma combinação cuidadosa 
+                    de diálogos, exercícios interativos, simulações do mundo real e discussões em grupo. Valorizamos a comunicação 
+                    autêntica, incentivando os alunos a aplicar o que aprenderam em situações reais desde o início. Além disso, 
+                    usamos recursos audiovisuais modernos para aprimorar a compreensão auditiva e tornar as aulas mais envolventes.
+                    <br><br>
+                    Em nosso Curso de Inglês, não apenas você adquirirá habilidades linguísticas sólidas, mas também terá a oportunidade 
+                    de explorar a cultura e a diversidade da língua inglesa. Estamos ansiosos para embarcar nesta jornada de aprendizado 
+                    emocionante com você e acompanhá-lo à medida que você alcança níveis impressionantes de proficiência no inglês. Prepare-se 
+                    para desbravar horizontes linguísticos e abrir portas para um futuro cheio de oportunidades!
+                </p>
+            </div>
+            
+            <img src="images/img-dinamic.jpg" alt="image-dinamic" width="250" height="250">
+        </div>
+
+        
+    </main>
+
+
+    <main class="aulas">
+        <h1>Aulas do curso</h1>
+        <div class="aula" onclick="showContent(1)">
+            <p>Introdução ao Inglês e Pronúncia</p>
+            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </div>
+
+        <div class="conteudo" id="conteudo-1">
+            <ul>
+                <li>Apresentação do curso e objetivos.</li>
+                <li>Introdução ao alfabeto e sons do inglês.</li>
+                <li style="border: none;">Atividade: Praticando a pronúncia dos sons.</li>
+            </ul>
+        </div>
+
+
+        <div class="aula" onclick="showContent(2)">
+            <p>Cumprimentos e Apresentações</p>
+            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </div>
+
+        <div class="conteudo" id="conteudo-2">
+            <ul>
+                <li>Aprender cumprimentos básicos e apresentações.</li>
+                <li>Diálogos de situações cotidianas.</li>
+                <li>Dinâmica: Role-playing para praticar cumprimentos.</li>
+            </ul>
+        </div>
+
+
+        <div class="aula" onclick="showContent(3)">
+            <p>Números e Datas</p>
+            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </div>
+
+        <div class="conteudo" id="conteudo-3">
+            <ul>
+                <li>Números cardinais e ordinais.</li>
+                <li>Expressar datas e horários.</li>
+                <li>Atividade: Criar um calendário com datas importantes.</li>
+            </ul>
+        </div>
+
+
+        <div class="aula" onclick="showContent(4)">
+            <p>Vocabulário Básico e Cores</p>
+            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </div>
+
+        <div class="conteudo" id="conteudo-4">
+            <ul>
+                <li>Aprender vocabulário para descrever objetos e cores.</li>
+                <li>Jogos de correspondência de palavras e imagens.</li>
+                <li>Dinâmica: Caça ao tesouro com cores.</li>
+            </ul>
+        </div>
+
+        <div class="aula" onclick="showContent(5)">
+            <p>Descrição de Pessoas e Objetos</p>
+            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </div>
+
+        <div class="conteudo" id="conteudo-5">
+            <ul>
+                <li>Adjetivos para descrever pessoas e objetos.</li>
+                <li>Praticar a formação de frases descritivas.</li>
+                <li>Atividade em pares: Descrever um colega da classe.</li>
+            </ul>
+        </div>
+
+        <div class="aula" onclick="showContent(6)">
+            <p>Verbos e Rotina Diária</p>
+            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </div>
+
+        <div class="conteudo" id="conteudo-6">
+            <ul>
+                <li>Verbos de ação para descrever rotinas diárias.</li>
+                <li>Criar um diálogo sobre a rotina diária.</li>
+                <li>Dinâmica: Entrevista de "um dia na vida" com um colega.</li>
+            </ul>
+        </div>
+
+        <div class="aula" onclick="showContent(7)">
+            <p>Compras e Alimentação Básica</p>
+            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </div>
+
+        <div class="conteudo" id="conteudo-7">
+            <ul>
+                <li>Vocabulário relacionado a compras e alimentos.</li>
+                <li>Simulações de diálogos em um mercado.</li>
+                <li>Atividade: Criar um menu fictício em inglês.</li>
+            </ul>
+        </div>
+
+
+        <div class="aula" onclick="showContent(8)">
+            <p>Tempo e Clima</p>
+            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </div>
+
+        <div class="conteudo" id="conteudo-8">
+            <ul>
+                <li>Expressões de tempo e condições climáticas.</li>
+                <li>Descrever o clima de diferentes lugares.</li>
+                <li>Dinâmica: Previsão do tempo em inglês.</li>
+            </ul>
+        </div>
+
+
+        <div class="aula" onclick="showContent(9)">
+            <p>Viagens e Transportes</p>
+            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </div>
+
+        <div class="conteudo" id="conteudo-9">
+            <ul>
+                <li>Vocabulário de viagens e meios de transporte.</li>
+                <li>Planejamento de uma viagem fictícia em grupos.</li>
+                <li>Apresentação dos planos de viagem.</li>
+            </ul>
+        </div>
+
+        <div class="aula" onclick="showContent(10)">
+            <p>Conversação e Debate</p>
+            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </div>
+
+        <div class="conteudo" id="conteudo-10">
+            <ul>
+                <li>Tópicos de discussão para debates em grupo.</li>
+                <li>Praticar expressar opiniões e argumentar.</li>
+                <li>Dinâmica: Debates simulados sobre tópicos atuais.</li>
+            </ul>
+        </div>
+
+        <div class="aula" onclick="showContent(11)">
+            <p>Passado e Narrativa</p>
+            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </div>
+
+        <div class="conteudo" id="conteudo-11">
+            <ul>
+                <li>Tempos verbais no passado: Simple Past e Past Continuous.</li>
+                <li>Contar histórias pessoais em inglês.</li>
+                <li>Atividade: Escrever e compartilhar uma história curta.</li>
+            </ul>
+        </div>
+
+
+        <div class="aula" onclick="showContent(12)">
+            <p>Cultura e Sociedade</p>
+            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </div>
+
+        <div class="conteudo" id="conteudo-12">
+            <ul>
+                <li>Vocabulário relacionado à cultura, arte e sociedade.</li>
+                <li>Discussão sobre costumes e tradições.</li>
+                <li>Projeto em grupo: Apresentação sobre uma cultura anglofônica.</li>
+            </ul>
+        </div>
+
+
+        <div class="aula" onclick="showContent(13)">
+            <p>Expressões Idiomáticas e Gírias</p>
+            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </div>
+
+        <div class="conteudo" id="conteudo-13">
+            <ul>
+                <li>Aprender expressões idiomáticas e gírias comuns.</li>
+                <li>Praticar o uso adequado em contextos específicos.</li>
+                <li>Atividade: Criar um diálogo usando expressões idiomáticas.</li>
+            </ul>
+        </div>
+
+
+        <div class="aula" onclick="showContent(14)">
+            <p>Habilidades de Escuta e Fala</p>
+            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </div>
+
+        <div class="conteudo" id="conteudo-14">
+            <ul>
+                <li>Exercícios de escuta com falantes nativos.</li>
+                <li>Praticar compreensão auditiva e pronúncia.</li>
+                <li>Atividade: Escutar um podcast e discutir o conteúdo.</li>
+            </ul>
+        </div>
+
+
+        <div class="aula" onclick="showContent(15)">
+            <p>Gramática Avançada: Condicional e Reported Speech</p>
+            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </div>
+
+        <div class="conteudo" id="conteudo-15">
+            <ul>
+                <li>Uso dos diferentes tipos de condicional.</li>
+                <li>Transformação de frases diretas em reported speech.</li>
+                <li>Exercícios de aplicação.</li>
+            </ul>
+        </div>
+
+
+        <div class="aula" onclick="showContent(16)">
+            <p>Inglês para Negócios</p>
+            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </div>
+
+        <div class="conteudo" id="conteudo-16">
+            <ul>
+                <li>Vocabulário e situações comuns no ambiente de negócios.</li>
+                <li>Simulações de reuniões e negociações.</li>
+                <li>Dinâmica: Role-playing de situações empresariais.</li>
+            </ul>
+        </div>
+
+
+        <div class="aula" onclick="showContent(17)">
+            <p>Literatura e Filmes</p>
+            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </div>
+
+        <div class="conteudo" id="conteudo-17">
+            <ul>
+                <li>Discussão sobre literatura e filmes em inglês.</li>
+                <li>Análise de trechos literários e diálogos de filmes.</li>
+                <li>Atividade: Escrever uma resenha de um livro ou filme.</li>
+            </ul>
+        </div>
+
+
+        <div class="aula" onclick="showContent(18)">
+            <p>Inglês Acadêmico e Técnico</p>
+            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </div>
+
+        <div class="conteudo" id="conteudo-18">
+            <ul>
+                <li>Vocabulário e estruturas para textos acadêmicos.</li>
+                <li>Praticar a escrita de um ensaio curto.</li>
+                <li>Revisão e feedback entre colegas.</li>
+            </ul>
+        </div>
+
+
+        <div class="aula" onclick="showContent(19)">
+            <p>Preparação para Testes de Proficiência</p>
+            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </div>
+
+        <div class="conteudo" id="conteudo-19">
+            <ul>
+                <li>Dicas para exames como TOEFL, IELTS, etc.</li>
+                <li>Simulação de seções de teste com tempo limitado.</li>
+                <li>Discussão sobre estratégias de resposta.</li>
+            </ul>
+        </div>
+
+
+        <div class="aula" style="border: none;" onclick="showContent(20)">
+            <p>Projeto Final e Encerramento</p>
+            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </div>
+
+        <div class="conteudo" id="conteudo-20">
+            <ul>
+                <li>Desenvolvimento de um projeto individual abordando um tema escolhido.</li>
+                <li>Apresentação dos projetos perante a classe.</li>
+                <li>Encerramento do curso e entrega de certificados.</li>
+            </ul>
+        </div>
+
+
+    </main>
+
+    <main class="promocoes">
+        <div class="promocao">
+            <h1>Premium</h1>
+            <h3>Plano premium comum mensal</h3>
+            <h2>R$24,99/<h5>mês</h5></h2>
+        </div>
+        <div class="promocao">
+            <h1>Premium+</h1>
+            
+        </div>
+    </main>
+
+
+
+
+    <main class="login">
+        <section class="cadastrar">
+            <form action="connection/index.php" method="post">
+                <p>Sign up</p>
+                <div>
+                    <label for="">Nome:</label><br>
+                    <input type="text" max="100" name="nome" id="nome" autocomplete="off"><br>
+                    <label for="">Email:</label><br>
+                    <input type="text" name="email" id="email" autocomplete="off"><br>
+                    <label for="">Senha:</label><br>
+                    <input type="password" name="pass" id="pass" autocomplete="off"><br> 
+                </div>
+                <button>ENVIAR</button>
+            </form>
+            <form action="connection/index.php" method="post">
+                <p>Login</p>
+                <div>
+                    <label for="">Email:</label><br>
+                    <input type="text" name="email" id="email" autocomplete="off"><br>
+                    <label for="">Senha:</label><br>
+                    <input type="password" name="pass" id="pass" autocomplete="off"><br>
+                </div>
+                <button>ENVIAR</button>
+            </form>
+        </section>
+    </main>
+
+
+
+
+    <footer>
+        <p>&copy;  Todos os direito reservados | FenixEnglish |</p>
+        <img src="images/logo.png" alt="logo" width="50">
+    </footer>
+
+
+    
     <script src="script/script.js"></script>
 </body>
 </html>

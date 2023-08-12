@@ -1,23 +1,627 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@1,300&family=Mulish:ital,wght@1,300&display=swap');
+
+
 *
 
 {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
 }
 
 
 body
 
 {
-    background: #e7e7e7 100% 100vh;
+    background: url('../images/bg.webp');
+    backdrop-filter: blur(7px);
+    /* background: #e7e7e7 100% 100vh; */
 }
 
 header
 
 {
-    background: darkred;
+    background: rgb(22, 9, 9);
     width: 100%;
-    height: 70vh;
-    min-height: 300px;
+    height: 9vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo
+
+{
+    display: flex;
+    height: 9vh;
+    color: #fff;
+    align-items: center;
+    margin-left: 7%;
+}
+
+
+
+.logo div
+
+{
+    display: flex;
+    align-items: center;
+}
+
+.logo img
+
+{
+    width: 50px;
+    height: 50px;
+}
+
+.logo ul
+
+{
+    list-style: none;
+    display: flex;
+}
+
+.logo ul li a
+
+{
+    text-decoration: none;
+    color: #b8b8b8;
+    padding: 10px;
+    transition: all .3s;
+}
+
+.logo ul li a:hover
+
+{
+    color: #fff;
+}
+
+.buttons
+
+{
+    margin-right: 3%;
+}
+
+.buttons button
+
+{
+    text-transform: uppercase;
+    padding: 9px 10px;
+    border: 1px solid white;
+    border-radius: 13px;
+    color: #fff;
+    width: 23vw;
+    max-width: 175px;
+    min-width: 135px;
+    background: transparent;
+    font-size: clamp(8px, 1vh + 1vw, 13px);
+    cursor: pointer;
+}
+
+.buttons button:first-child
+
+{
+    background: red;
+    border: 1px solid red;
+}
+
+
+
+
+
+
+.apresentacao
+
+{
+    width: 100%;
+    background: #ff2400;
+    padding: 40px 55px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.apresentacao .vantagens
+
+{
+    width: 285px;
+    min-width: 285px;
+    height: 340px;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    border-radius: 23px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.507);
+}
+
+
+.apresentacao .vantagens:before
+
+{
+    content: '';
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background: linear-gradient(45deg,limegreen, rgb(7, 185, 255));
+    animation: anima 3s linear infinite;
+}
+
+
+.apresentacao .vantagens .content
+
+{
+    border-radius: 20px;
+    width: 270px;
+    position: absolute;
+    height: 325px;
+    background: #f6f6f6;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 10px;
+}
+
+.apresentacao .vantagens .content span
+
+{   
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(12px, 2vh + 2vw, 1.5rem);
+}
+
+.apresentacao .vantagens .content #vantagem
+
+{
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+.apresentacao .vantagens .content div div
+
+{
+    width: 230px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.apresentacao .curso
+
+{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: rgb(250, 243, 243);
+    padding: 10px;
+}
+
+
+.apresentacao .curso .title
+
+{
+    font-weight: 700;
+    font-size: clamp(13px, 1vh + 1vw, 1rem);
+}
+
+.apresentacao .curso h1
+
+{
+    color: rgb(64, 255, 191);
+    margin-bottom: 40px;
+}
+
+
+
+.apresentacao-total
+
+{
+    width: 100%;
+    padding: 100px;
+}
+
+
+.apresentacao-total .apres
+
+{
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.apresentacao-total .apres div
+
+{
+    width: 70%;
+}
+
+
+.apresentacao-total h2
+
+{
+    margin-bottom: 15px;
+    font-size: clamp(20px, 2vh + 2vw, 30px);
+}
+
+.apresentacao-total p
+
+{
+    font-size: clamp(15px, 2vh + 2vw, 18px);
+}
+
+
+.aulas
+
+{
+    width: 100%;
+    padding: 70px;
+    padding-right: 0;
+    font-size: clamp(15px, 2vh + 2vw, 20px);
+}
+
+.aulas h1
+
+{
+    margin-bottom: 40px;
+}
+
+
+.aulas .aula 
+
+{
+    width: 50%;
+    background: #ffc6bd;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-bottom: 1px solid white;
+}
+
+.aulas .conteudo
+
+{
+    margin-left: 7%;
+    display: none;
+}
+
+.aulas .conteudo ul
+
+{
+    width: 55%;
+    margin: 10px 0;
+    list-style-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 10 10"><circle fill="red" cx="7" cy="7" r="2"/></svg>');
+    list-style-position: inside;
+    background: #ffa89b;
+}
+
+.aulas .conteudo ul li
+
+{
+    border-bottom: 1px solid white;
+    padding: 10px 15px;
+}
+
+
+
+.promocoes
+
+{
+    width: 100%;
+    padding: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.promocoes .promocao
+
+{
+    width: 300px;
+    height: 400px;
+    background: white;
+    border-radius: 30px;
+    box-shadow: 0 0 50px rgba(255, 0, 0, 0.562);
+    margin: 0 40px;
+}
+
+.promocoes .promocao h1
+
+{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+.login
+
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px;
+}
+
+
+
+.login .cadastrar
+
+{
+    width: 60vw;
+    padding: 7px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+.login .cadastrar::before
+
+{
+    content: '';
+    position: absolute;
+    width: 1600px;
+    height: 1600px;
+    background: linear-gradient(45deg, #33ffb1, #ff5237);
+    animation: anima 3s infinite linear;
+}
+
+.login .cadastrar::after
+
+{
+    content: '';
+    position: absolute;
+    width: calc(60vw - 10px);
+    height: calc(100% - 10px);
+    background: white;
+}
+
+
+.login .cadastrar form
+
+{
+    width: 60vw;
+    height: 300px;
+    padding: 20px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login .cadastrar .line
+
+{
+    width: 4px;
+    height: 250px;
+    background: black;
+    z-index: 1;
+}
+
+
+.login .cadastrar form p
+
+{
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: clamp(20px, 2vh + 2vw, 30px);
+}
+
+
+.login .cadastrar form input
+
+{
+    border: none;
+    width: 200px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid red;
+    outline: none;
+    padding: 3px;
+    background: transparent;
+}
+
+.login .cadastrar form button
+
+{
+    background: red;
+    border: none;
+    width: 20vw;
+    padding: 10px;
+    color: white;
+    font-size: 15px;
+    border-radius: 20px;
+}
+
+
+footer
+
+{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #e7e7e7;
+    background: #212121;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1050px)
+
+{
+    .apresentacao
+
+    {
+        flex-direction: column;
+    }    
+    
+    .apresentacao .curso
+    
+    {
+        width: 100%;
+    }    
+
+    .apresentacao-total .apres
+
+    {
+        flex-direction: column;
+    }    
+
+    .apresentacao-total .apres div
+    
+    {
+        width: 90%;
+        margin: 10px;
+    }    
+
+    .aulas .aula
+
+    {
+        width: 70%;
+    }
+
+    .aulas .conteudo ul
+
+    {
+        width: 75%;
+    }
+    
+
+}    
+
+
+
+
+
+
+@media screen and (max-width: 950px) 
+
+{
+
+    header
+
+    {
+        height: 110px;
+    }
+    
+    
+    .logo
+
+    {
+        height: 110px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .aulas .aula
+
+    {
+        width: 80%;
+    }
+
+    .aulas .conteudo ul
+
+    {
+        width: 85%;
+    }
+
+    .login .cadastrar
+
+    {
+        flex-direction: column;
+    }
+
+    .login .cadastrar form
+
+    {
+        height: 300px;
+    }
+
+    .line
+
+    {
+        rotate: 90deg;
+    }
+    
+}
+
+
+@media screen and (max-width: 600px)
+
+{
+
+    header
+
+    {
+        justify-content: space-around;
+    }
+
+
+    .buttons
+
+    {
+        height: 110px;
+        display: grid;
+        place-content: center;
+        margin: 0;
+    }
+
+    .aulas .aula
+
+    {
+        width: 90%;
+    }
+
+    .aulas .conteudo ul
+
+    {
+        width: 95%;
+    }
+
+
+}
+
+
+@keyframes anima
+
+{
+    0%
+    {
+        rotate: 0;
+    }
+    100%
+    {
+        rotate: 360deg;
+    }
 }
