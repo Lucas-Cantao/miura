@@ -14,3 +14,9 @@ function showContent(id)
         test = 0;
     };
 };
+
+function redirect()
+
+{
+    window.location.href = "#signup"
+}

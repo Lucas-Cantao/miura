@@ -14,14 +14,14 @@
                 <h1>FenixEnglish</h1>  
             </div>
             <ul>
-                <li><a href="">Início</a></li>
-                <li><a href="">Cursos</a></li>
-                <li><a href="">Sobre</a></li>
+                <li><a href="#init">Início</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#courses">Cursos</a></li>
             </ul>
         </section>
 
         <section class="buttons">
-            <button>me cadastrar →</button>
+            <button onclick="redirect()">me cadastrar →</button>
             <button>entrar</button>
         </section>
     </header>
@@ -32,7 +32,7 @@
     <main class="apresentacao">
 
         <div class="vantagens">
-            <div class="content">
+            <div class="content" id="init">
                 <span>Vantagens de estudar conosco<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>main .vantagens .content svg{fill:#246dff}</style><path d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm177.6 62.1C192.8 334.5 218.8 352 256 352s63.2-17.5 78.4-33.9c9-9.7 24.2-10.4 33.9-1.4s10.4 24.2 1.4 33.9c-22 23.8-60 49.4-113.6 49.4s-91.7-25.5-113.6-49.4c-9-9.7-8.4-24.9 1.4-33.9s24.9-8.4 33.9 1.4zM144.4 208a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zm192-32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg></span>
 
                 <div id="vantagem">
@@ -73,15 +73,14 @@
                 destaque-se em um mundo globalizado. Sua jornada para a excelência no inglês começa aqui.</p>
         </div>
 
-
-
-
+        
+        
     </main>
 
     <main class="apresentacao-total">
         <div class="apres">
             <div>
-                <h2>Sobre o curso</h2>
+                <h2 id="about">Sobre o curso</h2>
                 <p>
                     Nosso Curso de Inglês é projetado para atender a uma ampla gama de alunos, desde iniciantes até 
                     aqueles que desejam aperfeiçoar suas habilidades existentes. O curso é estruturado em módulos 
@@ -130,9 +129,11 @@
         
     </main>
 
+    <img src="images/APRESENTACAO.jpg" alt="presentation-in-image" class="presentation-image">
+
 
     <main class="aulas">
-        <h1>Aulas do curso</h1>
+        <h1 id="courses">Aulas do curso</h1>
         <div class="aula" onclick="showContent(1)">
             <p>Introdução ao Inglês e Pronúncia</p>
             <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><polyline points="6 9 12 15 18 9"></polyline></svg>
@@ -412,20 +413,46 @@
 
     <main class="promocoes">
         <div class="promocao">
-            <h1>Premium</h1>
-            <h3>Plano premium comum mensal</h3>
-            <h2>R$24,99/<h5>mês</h5></h2>
+            <div class="classificationPlus"><h2>plus</h2></div>
+            <h1>Premium</h1><br>
+            <h3>Plano premium plus mensal</h3>
+            <span><h2>R$24,99/</h2><h5>mês</h5></span><br>
+            <div class="vantages">
+                <div class="vantagem"><p>Acesso à todo o conteúdo do curso</p><div class="check"></div></div>
+                <div class="vantagem"><p>Acesso vitalício</p><div class="check"></div></div>
+                <div class="vantagem"><p>Maior qualidade</p><div class="check"></div></div>
+                <div class="vantagem"><p>Aprender offline</p><div class="uncheck"></div></div>
+                <div class="vantagem"><p>Sem anúncios</p><div class="uncheck"></div></div>
+                <div class="vantagem"><p>Material de execícios</p><div class="uncheck"></div></div>
+            </div>
+            <div class="purshase">
+                <button class="plus">adquirir plano</button>
+            </div>
+
         </div>
         <div class="promocao">
-            <h1>Premium+</h1>
-            
+            <div class="classificationVip"><h2>vip</h2></div>
+            <h1>Premium</h1><br>
+            <h3>Plano premium vip mensal</h3>
+            <span><h2>R$49,99/</h2><h5>mês</h5></span><br>
+            <div class="vantages">
+                <div class="vantagem"><p>Acesso à todo o conteúdo do curso</p><div class="check"></div></div>
+                <div class="vantagem"><p>Acesso vitalício</p><div class="check"></div></div>
+                <div class="vantagem"><p>Maior qualidade</p><div class="check"></div></div>
+                <div class="vantagem"><p>Aprender offline</p><div class="check"></div></div>
+                <div class="vantagem"><p>Sem anúncios</p><div class="check"></div></div>
+                <div class="vantagem"><p>Material de execícios</p><div class="check"></div></div>
+            </div>
+            <div class="purshase">
+                <button class="vip">adquirir plano</button>
+            </div>
         </div>
     </main>
 
 
 
 
-    <main class="login">
+    <main class="login" id="signup">
         <section class="cadastrar">
             <form action="connection/index.php" method="post">
                 <p>Sign up</p>
@@ -456,12 +483,15 @@
 
 
     <footer>
-        <p>&copy;  Todos os direito reservados | FenixEnglish |</p>
-        <img src="images/logo.png" alt="logo" width="50">
+        <div class="direitos">
+            <p>&copy;  Todos os direito reservados | FenixEnglish |</p>
+            <img src="images/logo.png" alt="logo" width="50">
+        </div>
+        <a href="https://www.instagram.com/fenixenglishh">Siga-nos no instagram - FenixEnglish</a>
     </footer>
 
 
-    
+
     <script src="script/script.js"></script>
 </body>
 </html>

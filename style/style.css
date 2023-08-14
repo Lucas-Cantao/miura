@@ -19,13 +19,13 @@ body
     /* background: #e7e7e7 100% 100vh; */
 }
 
+
 header
 
 {
     background: rgb(22, 9, 9);
     width: 100%;
     height: 9vh;
-    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -159,7 +159,7 @@ header
 {
     border-radius: 20px;
     width: 270px;
-    position: absolute;
+    position: fixed;
     height: 325px;
     background: #f6f6f6;
     z-index: 1;
@@ -194,6 +194,13 @@ header
     justify-content: space-between;
 }
 
+
+.presentation-image
+
+{
+    width: 100%;
+    height: 40vw;
+}
 
 .apresentacao .curso
 
@@ -330,17 +337,151 @@ header
 {
     width: 300px;
     height: 400px;
-    background: white;
+    background: rgb(12, 12, 12);
     border-radius: 30px;
-    box-shadow: 0 0 50px rgba(255, 0, 0, 0.562);
-    margin: 0 40px;
+    border: 2px solid #ff0000;
+    margin: 20px 40px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    color: white;
 }
 
-.promocoes .promocao h1
+
+.promocoes .promocao .classificationPlus, .classificationVip
+
+{
+    width: 200px;
+    padding: 10px;
+    rotate: -45deg;
+    margin-left: -80px;
+    display: grid;
+    place-content: center;
+    color: red;
+    text-transform: uppercase;
+    background: linear-gradient(0deg, rgba(179,187,191,1) 0%, rgb(87, 94, 94) 83%);
+    box-shadow: 0 0 50px rgba(255, 255, 255, 0.384);
+}
+
+
+.promocoes .promocao .classificationVip
+
+{
+    background: linear-gradient(0deg, #ffd700, #e5ac00);
+    box-shadow: 0 0 50px rgba(255, 255, 0, 0.384);
+}
+
+
+.promocoes .promocao h1, h3
 
 {
     text-align: center;
 }
+
+
+.promocoes .promocao span
+
+{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+.promocoes .promocao .vantages .vantagem
+
+{
+    display: flex;
+    width: 260px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: clamp(10px, 2vh + 2vw, 16px);
+}
+
+
+.check
+
+{
+    width: 2px;
+    padding: 2px 5px;
+    rotate: -45deg;
+    height: 10px;
+    border: 5px solid rgb(0, 255, 106);
+    border-top: none;
+    border-right: none;
+}
+
+.uncheck
+
+{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5px;
+}
+
+.uncheck::before, .uncheck::after
+
+{
+    content: '';
+    position: absolute;
+    background: #ff0000;
+    width: 5px;
+    height: 15px;
+}
+
+.uncheck::before
+
+{
+    rotate: 45deg;
+}
+
+.uncheck::after
+
+{
+    rotate: -45deg;
+}
+
+
+.promocoes .promocao .purshase
+
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.promocoes .promocao .purshase button
+
+{
+    padding: 9px 20px;
+    width: 200px;
+    color: black;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+
+.promocoes .promocao .purshase .plus
+
+{
+    background: linear-gradient(0deg, rgba(179,187,191,1) 0%, rgb(87, 94, 94) 83%);
+    box-shadow: 0 0 50px rgba(255, 255, 255, 0.384);
+}
+
+.promocoes .promocao .purshase .vip
+
+{
+    background: linear-gradient(0deg, #ffd700, #e5ac00);
+    box-shadow: 0 0 50px rgba(255, 255, 0, 0.384);
+}
+
+
 
 
 
@@ -451,6 +592,7 @@ header
     color: white;
     font-size: 15px;
     border-radius: 20px;
+    cursor: pointer;
 }
 
 
@@ -460,9 +602,24 @@ footer
     height: 80px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
     color: #e7e7e7;
     background: #212121;
+}
+
+footer .direitos
+
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a
+
+{
+    color: #e7e7e7;
 }
 
 
@@ -576,6 +733,23 @@ footer
     
 }
 
+@media screen and (max-width: 896px) 
+
+{
+    .promocoes
+
+    {
+        flex-direction: column;
+    }
+
+
+    .promocoes .promocao
+
+    {
+        margin: 20px 0;
+    }
+}
+
 
 @media screen and (max-width: 600px)
 
@@ -625,3 +799,5 @@ footer
         rotate: 360deg;
     }
 }
+
+
